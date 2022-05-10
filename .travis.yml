@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t   talhatylextech/docker-reacttest   -f Dockerfile.dev .
+  - docker build -t talhatylextech/docker-reacttest -f Dockerfile.dev .
   
 script:
- - docker run  talhatylextech/docker-reacttest  npm run test -- --coverage
+ - docker run talhatylextech/docker-reacttest  npm run test -- --coverage
 
